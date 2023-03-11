@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/normalize.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <title>Bayan</title>
 </head>
 <body>
@@ -14,51 +16,58 @@
   </header>
   <section class="memes">
     <div class="wrapper memes__wrapper">
-        <ul class="memes-list">
-          <li class="meme">
-            <div class="meme__menu">
-              <h2 class="meme__name">University</h2>
-              <div class="plus"></div>
-            </div>
-            <img src="/assets/images/university.jpg" alt="" class="meme__img">
-          </li>
-          <li class="meme">
-            <div class="meme__menu">
-              <h2 class="meme__name">Cat</h2>
-              <div class="plus"></div>
-            </div>
-            <img src="/assets/images/cat.jpg" alt="" class="meme__img">
-          </li>
-          <li class="meme">
-            <div class="meme__menu">
-              <h2 class="meme__name">Bomb</h2>
-              <div class="plus"></div>
-            </div>
-            <img src="/assets/images/bomb.jpg" alt="" class="meme__img">
-          </li>
-          <li class="meme">
-            <div class="meme__menu">
-              <h2 class="meme__name">Spider</h2>
-              <div class="plus"></div>
-            </div>
-            <img src="/assets/images/spider.jpg" alt="" class="meme__img">
-          </li>
-          <li class="meme">
-            <div class="meme__menu">
-              <h2 class="meme__name">Ice</h2>
-              <div class="plus"></div>
-            </div>
-            <img src="/assets/images/ice.jpg" alt="" class="meme__img">
-          </li>
-          <li class="meme">
-            <div class="meme__menu">
-              <h2 class="meme__name">Ctrl</h2>
-              <div class="plus"></div>
-            </div>
-            <img src="/assets/images/ctrl.jpg" alt="" class="meme__img">
-          </li>
-        </ul>
-      </nav>
+        <div class="accordion-container">
+          <div class="accordion-item">
+              <label for="accordion-1" class="lab1">
+                <input id="accordion-1" name="accordion" type="radio" value="cat" checked>
+                <div class="accordion-item-menu">
+                  <h2 class="accordion-item-name">Cat</h2>
+                  <div class="tab-sign"></div>
+                </div>
+                <img src="/assets/images/cat.jpg" alt="" class="accordion-item-img">
+              </label>
+          </div>
+          <div class="accordion-item">
+              <label for="accordion-2" class="lab1">
+                <input id="accordion-2" name="accordion" type="radio" value="cat">
+                <div class="accordion-item-menu">
+                  <h2 class="accordion-item-name">Cat</h2>
+                  <div class="tab-sign"></div>
+                </div>
+                <img src="/assets/images/cat.jpg" alt="" class="accordion-item-img">
+              </label>
+          </div>
+          <div class="accordion-item">
+              <label for="accordion-3" class="lab1">
+                <input id="accordion-3" name="accordion" type="radio" value="cat">
+                <div class="accordion-item-menu">
+                  <h2 class="accordion-item-name">Cat</h2>
+                  <div class="tab-sign"></div>
+                </div>
+                <img src="/assets/images/cat.jpg" alt="" class="accordion-item-img">
+              </label>
+          </div>
+          <div class="accordion-item">
+              <label for="accordion-4" class="lab1">
+                <input id="accordion-4" name="accordion" type="radio" value="cat">
+                <div class="accordion-item-menu">
+                  <h2 class="accordion-item-name">Cat</h2>
+                  <div class="tab-sign"></div>
+                </div>
+                <img src="/assets/images/cat.jpg" alt="" class="accordion-item-img">
+              </label>
+          </div>
+          <div class="accordion-item">
+              <label for="accordion-5" class="lab1">
+                <input id="accordion-5" name="accordion" type="radio" value="cat">
+                <div class="accordion-item-menu">
+                  <h2 class="accordion-item-name">Cat</h2>
+                  <div class="tab-sign"></div>
+                </div>
+                <img src="/assets/images/cat.jpg" alt="" class="accordion-item-img">
+              </label>
+          </div>
+        </div>
     </div>
   </section>
 </body>
