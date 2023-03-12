@@ -1,7 +1,4 @@
-html {
-  overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
-}
+
 .name {
   display: inline;
   cursor: pointer;
@@ -40,7 +37,7 @@ input:checked ~ .accordion-item-img {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1.4rem 0;
   border-top: 0.1rem solid black;
 }
 h2 {
@@ -58,7 +55,7 @@ h1 {
 .accordion-container {
   background-color: #faebd7;
   border-radius: 0.7rem;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 0rem 1rem;
 }
 .lab1 {
   cursor: pointer;
@@ -87,6 +84,7 @@ input:checked ~ .accordion-item-menu .tab-sign {
   transition: transform 0.5s;
 }
 @media screen and (min-width: 700px) and (max-width:1000px) {
+
   h1 {
     font-size: 4rem;
   }
@@ -94,7 +92,7 @@ input:checked ~ .accordion-item-menu .tab-sign {
     font-size: 3rem;
   }
   .accordion-container {
-    padding: 1rem;
+    padding: 3rem 3rem 2rem 3rem;
   }
   .wrapper {
     padding: 0 1rem;
@@ -121,7 +119,7 @@ input:checked ~ .accordion-item-menu .tab-sign {
     border: 0.4rem solid rgb(72, 140, 35);
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   h1 {
     font-size: 4rem;
   }
@@ -150,7 +148,7 @@ input:checked ~ .accordion-item-menu .tab-sign {
     padding: 3.5rem 3.5rem 2.5rem 3.5rem;
   }
   .wrapper {
-    padding: 0 35rem;
+    padding: 0 20rem;
   }
   .tab-sign {
     opacity: 0;
