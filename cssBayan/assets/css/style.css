@@ -1,0 +1,174 @@
+html {
+  overflow-y: overlay;
+}
+.name {
+  display: inline;
+  color: rgba(58, 20, 181, 0.494);
+}
+.header {
+  text-align: center;
+}
+.wrapper {
+  padding: 0 1rem;
+}
+.accordion-item-img {
+  display: block;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  margin: 0 auto;
+  border-radius: 2%;
+  transition: 0.5s;
+}
+input:checked ~ .accordion-item-img {
+  width: 70%;
+  height: 70%;
+  opacity: 1;
+  padding-bottom: 1rem;
+}
+.tab-sign {
+  opacity: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  transition: opacity 0.5s, border 0.5s, transform 0.5s;
+}
+.accordion-item-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.1rem solid black;
+  padding: 1rem 0;
+}
+h2 {
+  margin: 0;
+  font-size: 1rem;
+  /* color: rgba(72, 140, 35, 0.737); */
+  font-family: 'Righteous', cursive;
+}
+h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Righteous', cursive;
+}
+.accordion-container {
+  background-color: #faebd7;
+  border-radius: 0.7rem;
+  padding: 1rem;
+}
+.lab1 > input {
+  display: none;
+}
+input:checked ~ .accordion-item-menu .tab-sign {
+  border-radius: 0;
+  border-top: 0.2rem solid black;
+  border-right: 0.2rem solid black;
+  border-left: 0rem;
+  border-bottom: 0rem;
+  transform: rotate(135deg);
+  margin-right: 0.1rem;
+  margin-top: -0.3rem;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+input:checked ~ .accordion-item-menu .accordion-item-name {
+  color: black;
+}
+.accordion-item-name {
+  color: green;
+  transition: 0.5s;
+}
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 4.1rem;
+  }
+  h2 {
+    font-size: 3.1rem;
+  }
+  .memes__wrapper {
+    padding: 0 20rem;
+  }
+  .accordion-container {
+    padding: 3rem;
+  }
+}
+
+
+@media (hover: hover) {
+  .name {
+    cursor: pointer
+  }
+  .lab1 {
+    cursor: pointer;
+  }
+  .lab1:hover .accordion-item-img {
+  width: 70%;
+  height: 70%;
+  opacity: 1;
+  padding-bottom: 1rem;
+  }
+  .lab1:hover .tab-sign {
+    border-radius: 0;
+    border-top: 0.5rem solid black;
+    border-right: 0.5rem solid black;
+    border-left: 0rem;
+    border-bottom: 0rem;
+    transform: rotate(135deg);
+    margin-right: 0.2rem;
+    margin-top: -0.6rem;
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.5s;
+  }
+  .tab-sign {
+    opacity: 0;
+    width: 1rem;
+    height: 1rem;
+    border: 0.5rem solid black;
+    border-radius: 50%;
+    transition: opacity 0.5s, border 0.5s, transform 0.5s;
+  }
+  input:checked ~ .accordion-item-menu .tab-sign {
+    border-radius: 0;
+    border-top: 0.5rem solid black;
+    border-right: 0.5rem solid black;
+    border-left: 0rem;
+    border-bottom: 0rem;
+    transform: rotate(135deg);
+    margin-right: 0.2rem;
+    margin-top: -0.6rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  .lab1:hover .accordion-item-name {
+    color: black;
+  }
+  .accordion-container:hover .tab-sign {
+    opacity: 1;
+  }
+  .accordion-container:hover .accordion-item-name {
+    color: black;
+  }
+  .lab1:active  {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    cursor: grab;
+  }
+  .lab1:active .accordion-item-menu .accordion-item-name {
+    color: green;
+    transition: color 0s;
+  }
+  .lab1:active .accordion-item-menu .tab-sign {
+    border-color: green;
+    transition: border-color 0s;
+  }
+}
