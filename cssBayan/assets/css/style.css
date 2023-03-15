@@ -56,19 +56,6 @@ h1 {
   background-color: #faebd7;
   border-radius: 0.7rem;
   padding: 1rem;
-
-}
-.lab1:active  {
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-.lab1:active .accordion-item-menu .accordion-item-name {
-  color: green;
-  transition: color 0s;
-}
-.lab1:active .accordion-item-menu .tab-sign {
-  border-color: green;
-  transition: border-color 0s;
 }
 .lab1 > input {
   display: none;
@@ -175,5 +162,13 @@ input:checked ~ .accordion-item-menu .accordion-item-name {
     opacity: 0.8;
     transition: opacity 0.3s;
     cursor: grab;
+  }
+  .lab1:active .accordion-item-menu .accordion-item-name {
+    color: green;
+    transition: color 0s;
+  }
+  .lab1:active .accordion-item-menu .tab-sign {
+    border-color: green;
+    transition: border-color 0s;
   }
 }
