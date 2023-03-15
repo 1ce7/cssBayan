@@ -61,7 +61,6 @@ h1 {
 .lab1:active  {
   opacity: 0.8;
   transition: opacity 0.3s;
-
 }
 .lab1:active .accordion-item-menu .accordion-item-name {
   color: green;
@@ -171,5 +170,10 @@ input:checked ~ .accordion-item-menu .accordion-item-name {
   }
   .accordion-container:hover .accordion-item-name {
     color: black;
+  }
+  .lab1:active  {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    cursor: grab;
   }
 }
